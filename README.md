@@ -19,6 +19,7 @@ When using these components it is important to keep in mind that we are utilizin
 
 - [Moment](https://momentjs.com/) for parsing JavaScript dates and printing them in a readable way.
 - [Shave](https://github.com/dollarshaveclub/shave) to trim long messages to maintain consistency amongst `ConversationListItem`.
+- [Axios](https://github.com/axios/axios) to facilitate HTTP requests (for messages, users, etc).
 
 ### Compose
 
