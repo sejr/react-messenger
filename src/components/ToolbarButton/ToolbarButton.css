@@ -1,0 +1,9 @@
+.toolbar-button {
+  color: #007aff;
+  font-size: 28px;
+}
+
+.toolbar-button:hover {
+  cursor: pointer;
+  color: #0063ce;
+}

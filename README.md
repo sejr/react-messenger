@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-messenger
+
+This project uses React and CSS to recreate the Facebook Messenger web
+application. It is in its early stages but most of the building blocks are in
+place.
 
 ## Available Scripts
 
