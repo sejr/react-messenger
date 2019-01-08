@@ -1,8 +1,11 @@
-# react-messenger
+<p align="center">
+  <img src="./public/react-messenger.svg" height="150px" />
+  <h1>React Messenger</h1>  
+</p>
 
-This project uses React and CSS to recreate the Facebook Messenger web
-application. It is in its early stages but most of the building blocks are in
-place.
+> This project uses React and CSS to recreate the Facebook Messenger web application. It is in its early stages but most of the building blocks are in place. 
+
+**This is not an official Facebook product nor is it supported or maintained by Facebook employees.**
 
 ## Available Scripts
 
