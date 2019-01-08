@@ -8,7 +8,7 @@
 <p align="center"><b><a href="https://zen-bell-45d9db.netlify.com/">CLICK HERE FOR A LIVE DEMO</a></b></p>
 
 <p align="center">
-  <img src="./assets/screenshot.png" />
+  <img src="./assets/react-messenger.png" />
 </p>
 
 <hr />
