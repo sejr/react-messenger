@@ -27,8 +27,10 @@ export default class Message extends Component {
             </div>
         }
 
-        <div className="bubble-container" title={friendlyTimestamp}>
-          <div className="bubble">{ data.message }</div>
+        <div className="bubble-container">
+          <div className="bubble" title={friendlyTimestamp}>
+            { data.message }
+          </div>
         </div>
       </div>
     );

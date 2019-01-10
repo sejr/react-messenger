@@ -5,28 +5,31 @@
   background: #eeeef1;
 
   grid-template-columns: 350px auto;
-  grid-template-rows: 50px auto 50px;
+  grid-template-rows: 60px auto 60px;
   grid-column-gap: 1px;
   grid-row-gap: 1px;
 }
 
 .container {
-  padding: 11px;
+  padding: 10px;
 }
 
 .scrollable {
+  position: relative;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
 .sidebar {
   background: white;
-  grid-row-start: 2;
-  grid-row-end: span 2;
+  grid-row-start: 1;
+  grid-row-end: span 3;
 }
 
 .content {
   background: white;
+  grid-row-start: 1;
+  grid-row-end: span 3;
 }
 
 .footer {

@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Compose from '../Compose';
+import Toolbar from '../Toolbar';
+import ToolbarButton from '../ToolbarButton';
 import Message from '../Message';
 import moment from 'moment';
 
@@ -150,18 +153,25 @@ export default class MessageList extends Component {
   render() {
     return(
       <div className="message-list">
-      {
-        this.renderMessages()
-        // messages.map(message => {
-        //   return (
-        //     <Message
-        //       data={message}
-        //       key={message.id}
-        //       isMine={message.author === MY_USER_ID}
-        //       showTimestamp={false}
-        //     />)
-        // })
-      }
+        <Toolbar
+          title="Conversation Title"
+          rightItems={[
+            <ToolbarButton key="info" icon="ion-ios-information-circle-outline" />,
+            <ToolbarButton key="video" icon="ion-ios-videocam" />,
+            <ToolbarButton key="phone" icon="ion-ios-call" />
+          ]}
+        />
+
+        <div className="message-list-container">{this.renderMessages()}</div>
+
+        <Compose rightItems={[
+          <ToolbarButton key="photo" icon="ion-ios-camera" />,
+          <ToolbarButton key="image" icon="ion-ios-image" />,
+          <ToolbarButton key="audio" icon="ion-ios-mic" />,
+          <ToolbarButton key="money" icon="ion-ios-card" />,
+          <ToolbarButton key="games" icon="ion-logo-game-controller-b" />,
+          <ToolbarButton key="emoji" icon="ion-ios-happy" />
+        ]}/>
       </div>
     );
   }
