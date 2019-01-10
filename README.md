@@ -88,6 +88,17 @@ Probably better described as an "icon button," it is just that -- a button that 
 
 <hr />
 
+## Roadmap
+
+This is a rather straight-forward library but I do plan to continue making improvements and adding features. If you would like to contribute, you are more than welcome to.
+
+- [ ] Media messages (e.g. photos, videos)
+- [ ] Tooltips, popovers, modals (for viewing options, sending new messages, etc)
+- [ ] Graceful degradation (network status indicator, loading spinners, etc)
+- [ ] Responsiveness
+
+<hr />
+
 ## Available Scripts
 
 In the project directory, you can run:
