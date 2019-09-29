@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Toolbar.css';
 
-export default class Toolbar extends Component {
-  render() {
-    const { title, leftItems, rightItems } = this.props;
+export default function Toolbar(props) {
+    const { title, leftItems, rightItems } = props;
     return (
       <div className="toolbar">
         <div className="left-items">{ leftItems }</div>
@@ -11,5 +10,4 @@ export default class Toolbar extends Component {
         <div className="right-items">{ rightItems }</div>
       </div>
     );
-  }
 }

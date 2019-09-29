@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
+import React, {useEffect} from 'react';
 import shave from 'shave';
 
 import './ConversationListItem.css';
 
-export default class ConversationListItem extends Component {
-  componentDidMount() {
+export default function ConversationListItem(props) {
+  useEffect(() => {
     shave('.conversation-snippet', 20);
-  }
+  })
 
-  render() {
-    const { photo, name, text } = this.props.data;
+    const { photo, name, text } = props.data;
 
     return (
       <div className="conversation-list-item">
@@ -20,5 +19,4 @@ export default class ConversationListItem extends Component {
         </div>
       </div>
     );
-  }
 }

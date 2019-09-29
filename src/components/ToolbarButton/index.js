@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './ToolbarButton.css';
 
-export default class ToolbarButton extends Component {
-  render() {
-    const { icon } = this.props;
+export default function ToolbarButton(props) {
+    const { icon } = props;
     return (
       <i className={`toolbar-button ${icon}`} />
     );
-  }
 }

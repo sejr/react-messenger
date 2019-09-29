@@ -1,16 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import moment from 'moment';
 import './Message.css';
 
-export default class Message extends Component {
-  render() {
+export default function Message(props) {
     const {
       data,
       isMine,
       startsSequence,
       endsSequence,
       showTimestamp
-    } = this.props;
+    } = props;
 
     const friendlyTimestamp = moment(data.timestamp).format('LLLL');
     return (
@@ -34,5 +33,4 @@ export default class Message extends Component {
         </div>
       </div>
     );
-  }
 }
