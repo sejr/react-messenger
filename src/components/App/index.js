@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Messenger from '../Messenger';
 
-export default class App extends Component {
-  render() {
+export default function App() {
     return (
       <div className="App">
         <Messenger />
       </div>
     );
-  }
 }

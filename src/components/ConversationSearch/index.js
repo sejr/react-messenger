@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './ConversationSearch.css';
 
-export default class ConversationSearch extends Component {
-  render() {
+export default function ConversationSearch() {
     return (
       <div className="conversation-search">
         <input
@@ -12,5 +11,4 @@ export default class ConversationSearch extends Component {
         />
       </div>
     );
-  }
 }

@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Compose.css';
 
-export default class Compose extends Component {
-  render() {
+export default function Compose(props) {
     return (
       <div className="compose">
         <input
@@ -12,9 +11,8 @@ export default class Compose extends Component {
         />
 
         {
-          this.props.rightItems
+          props.rightItems
         }
       </div>
     );
-  }
 }

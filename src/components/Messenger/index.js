@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ConversationList from '../ConversationList';
 import MessageList from '../MessageList';
 import './Messenger.css';
 
-export default class Messenger extends Component {
-  render() {
+export default function Messenger(props) {
     return (
       <div className="messenger">
         {/* <Toolbar
@@ -35,5 +34,4 @@ export default class Messenger extends Component {
         </div>
       </div>
     );
-  }
 }

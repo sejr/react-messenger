@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {useState, useEffect} from 'react';
 import ConversationSearch from '../ConversationSearch';
 import ConversationListItem from '../ConversationListItem';
 import Toolbar from '../Toolbar';
@@ -7,35 +7,25 @@ import axios from 'axios';
 
 import './ConversationList.css';
 
-export default class ConversationList extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      conversations: []
-    };
-  }
+export default function ConversationList(props) {
+  const [conversations, setConversations] = useState([]);
+  useEffect(() => {
+    getConversations()
+  },[])
 
-  componentDidMount() {
-    this.getConversations();
-  }
-
-  getConversations = () => {
+ const getConversations = () => {
     axios.get('https://randomuser.me/api/?results=20').then(response => {
-      this.setState(prevState => {
-        let conversations = response.data.results.map(result => {
+        let newConversations = response.data.results.map(result => {
           return {
             photo: result.picture.large,
             name: `${result.name.first} ${result.name.last}`,
             text: 'Hello world! This is a long message that needs to be truncated.'
           };
         });
-
-        return { ...prevState, conversations };
-      });
+        setConversations([...conversations, ...newConversations])
     });
   }
 
-  render() {
     return (
       <div className="conversation-list">
         <Toolbar
@@ -49,7 +39,7 @@ export default class ConversationList extends Component {
         />
         <ConversationSearch />
         {
-          this.state.conversations.map(conversation =>
+          conversations.map(conversation =>
             <ConversationListItem
               key={conversation.name}
               data={conversation}
@@ -58,5 +48,4 @@ export default class ConversationList extends Component {
         }
       </div>
     );
-  }
 }
