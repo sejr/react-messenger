@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.21.1",
-    "moment": "^2.23.0",
+    "moment": "^2.29.4",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "react-scripts": "2.1.3"
